@@ -20,8 +20,8 @@ int main( int argc, char* argv[] ) {
         fmt::print("解析失败: {}\n", reader.getFormattedErrorMessages());
         return 1;
     }
-
-    fmt::print("{}\n", value2["sourceId"]);
+    auto sourceId = value2["sourceId"];
+    fmt::print("{}\n", sourceId.asInt64());
     
     return 0;
 }

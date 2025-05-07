@@ -8,8 +8,10 @@ int main( int argc, char* argv[] ) {
     value["sourceId"] = 18423830;
     value["username"] = "zhang";
     value["usercode"] = "aabbcc";
-    
+
+
     std::string strData = value.toStyledString();
+    fmt::print("{}\n", strData);
 
     Json::Value value2;
     Json::Reader reader;
@@ -19,7 +21,7 @@ int main( int argc, char* argv[] ) {
         return 1;
     }
 
-    fmt::print("{}", value2["sourceId"]);
+    fmt::print("{}\n", value2["sourceId"]);
     
     return 0;
 }

@@ -26,6 +26,5 @@ dmjsoncpp
 ```cpp
 ```
 ## Contacts
-[![Join the chat](https://badges.gitter.im/brinkqiang/dmjsoncpp/Lobby.svg)](https://gitter.im/brinkqiang/dmjsoncpp)
 
 ## Thanks

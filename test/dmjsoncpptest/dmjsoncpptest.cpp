@@ -1,15 +1,18 @@
 
 #include "json/json.h"
 #include "dmformat.h"
+#include "dmfix_win_utf8.h"
 
 int main( int argc, char* argv[] ) {
 
     Json::Value value;
     value["sourceId"] = 123321;
-    value["username"] = "千里江山图";
+    value["username"] = "超级管理员";
     value["usercode"] = "随机CODE";
 
 
+    fmt::print("{}\n", value["username"]);
+    fmt::print("{}\n", value["username"].asCString());
     std::string strData = value.toStyledString();
     fmt::print("{}\n", strData);
 

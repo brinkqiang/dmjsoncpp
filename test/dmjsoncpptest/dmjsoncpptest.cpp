@@ -5,9 +5,9 @@
 int main( int argc, char* argv[] ) {
 
     Json::Value value;
-    value["sourceId"] = 18423830;
-    value["username"] = "zhang";
-    value["usercode"] = "aabbcc";
+    value["sourceId"] = 123321;
+    value["username"] = "千里江山图";
+    value["usercode"] = "随机CODE";
 
 
     std::string strData = value.toStyledString();
